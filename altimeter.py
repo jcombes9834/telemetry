@@ -123,10 +123,10 @@ def pressure():
 	    MPL3115A2_CTRL_REG1_OS128 |
 	    MPL3115A2_CTRL_REG1_BAR)
 
-    poll()
+#    poll()
     
     msb, csb, lsb = bus.read_i2c_block_data(MPL3115A2_ADDRESS,MPL3115A2_REGISTER_PRESSURE_MSB,3)
-    print(msb, csb, lsb)
+#   print(msb, csb, lsb)
 
     return ((msb<<16) | (csb<<8) | lsb) / 64.
 
