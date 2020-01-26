@@ -6,7 +6,7 @@ node_id = 1
 network_id = 100
 recipient_id = 2
 
-with Radio(FREQ_915MHZ, node_id, network_id, isHighPower=True, verbose=True) as radio:
+with Radio(FREQ_915MHZ, node_id, network_id, isHighPower=False, verbose=True) as radio:
     print ("Starting loop...")
     
     rx_counter = 0
